@@ -148,7 +148,7 @@ class Soldier(models.Model):
     family_psychological_problems_history = models.BooleanField(default=False, verbose_name='سابقه بیماری های روانی در خانواده؟')
     family_drug_consumption_history = models.BooleanField(default=False, verbose_name='سابقه سو مصرف مواد در خانواده؟')
 
-    interviewer_opinions = models.TextField(verbose_name='نظرات مصاحبه کننده', default='')
+    interviewer_opinions = models.TextField(verbose_name='نظرات مصاحبه کننده', blank=True, null=True)
 
     class Meta:
         verbose_name = 'سرباز'
